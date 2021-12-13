@@ -6,9 +6,6 @@ lines = f.read().splitlines()
 
 #Part1
 a={}
-
-a=DefaultDict(int)
-print()
 for line in lines:
     code1,code2 = line.split(' | ') 
     code2list=code2.split(' ')
@@ -33,7 +30,7 @@ for line in lines:
                 a[8] +=1
             else:
                 a[8]=1     
-                 
+
 print(sum(a.values()))     
 
 
